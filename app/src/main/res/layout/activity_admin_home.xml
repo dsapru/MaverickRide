@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminHome"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="16dp"
+        android:text="Admin Home"
+        app:layout_constraintStart_toStartOf="@+id/edituser"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/edituser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:text="Edit User"
+        app:layout_constraintBottom_toTopOf="@+id/enableuser"
+        app:layout_constraintEnd_toEndOf="@+id/enableuser"
+        app:layout_constraintStart_toStartOf="@+id/enableuser" />
+
+    <Button
+        android:id="@+id/enableuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:text="Enable User"
+        app:layout_constraintBottom_toTopOf="@+id/revokeuser"
+        app:layout_constraintEnd_toEndOf="@+id/revokeuser"
+        app:layout_constraintStart_toStartOf="@+id/revokeuser" />
+
+    <Button
+        android:id="@+id/revokeuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:text="revoke user"
+        app:layout_constraintBottom_toTopOf="@+id/updateprofileadminbtn"
+        app:layout_constraintEnd_toEndOf="@+id/updateprofileadminbtn"
+        app:layout_constraintStart_toStartOf="@+id/updateprofileadminbtn" />
+
+    <Button
+        android:id="@+id/updateprofileadminbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:text="update profile"
+        app:layout_constraintBottom_toTopOf="@+id/adminlogout"
+        app:layout_constraintEnd_toEndOf="@+id/adminlogout"
+        app:layout_constraintStart_toStartOf="@+id/adminlogout" />
+
+    <Button
+        android:id="@+id/adminlogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="49dp"
+        android:text="logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

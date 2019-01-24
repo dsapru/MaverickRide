@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RevokeUser"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Revoke User"
+        app:layout_constraintEnd_toEndOf="@+id/textView26"
+        app:layout_constraintStart_toStartOf="@+id/textView26"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Enter UTA ID to revoke user:"
+        app:layout_constraintBottom_toTopOf="@+id/revokeuserbyadminutaid"
+        app:layout_constraintEnd_toEndOf="@+id/revokeuserbyadminutaid"
+        app:layout_constraintStart_toStartOf="@+id/revokeuserbyadminutaid" />
+
+    <EditText
+        android:id="@+id/revokeuserbyadminutaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="165dp"
+        android:ems="10"
+        android:hint="UTA ID"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/revokeuserbyadminbtn"
+        app:layout_constraintStart_toStartOf="@+id/revokeuserbyadminbtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/revokeuserbyadminbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Revoke User"
+        app:layout_constraintEnd_toEndOf="@+id/adminlogout"
+        app:layout_constraintStart_toStartOf="@+id/adminlogout"
+        app:layout_constraintTop_toBottomOf="@+id/revokeuserbyadminutaid" />
+
+    <Button
+        android:id="@+id/adminlogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:text="logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

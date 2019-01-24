@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnableUser"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Enable User"
+        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:text="Enter UTA ID to enable user:"
+        app:layout_constraintBottom_toTopOf="@+id/enableuserbyadminutaid"
+        app:layout_constraintEnd_toEndOf="@+id/enableuserbyadminutaid"
+        app:layout_constraintStart_toStartOf="@+id/enableuserbyadminutaid" />
+
+    <EditText
+        android:id="@+id/enableuserbyadminutaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="157dp"
+        android:ems="10"
+        android:hint="UTA ID"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/enableuserbyadminbtn"
+        app:layout_constraintStart_toStartOf="@+id/enableuserbyadminbtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/enableuserbyadminbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="enable user"
+        app:layout_constraintEnd_toEndOf="@+id/adminlogout"
+        app:layout_constraintStart_toStartOf="@+id/adminlogout"
+        app:layout_constraintTop_toBottomOf="@+id/enableuserbyadminutaid" />
+
+    <Button
+        android:id="@+id/adminlogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="58dp"
+        android:text="logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

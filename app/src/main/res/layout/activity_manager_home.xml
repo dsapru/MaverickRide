@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManagerHome"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="506dp"
+        android:text="Manager Home"
+        app:layout_constraintBottom_toTopOf="@+id/managerlogout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addrental"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="40dp"
+        android:text="add rental"
+        app:layout_constraintBottom_toTopOf="@+id/deleterental"
+        app:layout_constraintStart_toStartOf="@+id/deleterental" />
+
+    <Button
+        android:id="@+id/deleterental"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="delete rental"
+        app:layout_constraintBottom_toTopOf="@+id/viewbookings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/viewbookings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="40dp"
+        android:text="view bookings"
+        app:layout_constraintBottom_toTopOf="@+id/viewavailablecarsbtn"
+        app:layout_constraintEnd_toEndOf="@+id/deleterental" />
+
+    <Button
+        android:id="@+id/viewavailablecarsbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="view available cars"
+        app:layout_constraintBottom_toTopOf="@+id/updatemanagerprofile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/updatemanagerprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="41dp"
+        android:text="update profile"
+        app:layout_constraintBottom_toTopOf="@+id/managerlogout"
+        app:layout_constraintStart_toStartOf="@+id/viewavailablecarsbtn" />
+
+    <Button
+        android:id="@+id/managerlogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="14dp"
+        android:text="logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/updatemanagerprofile"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+</android.support.constraint.ConstraintLayout>
